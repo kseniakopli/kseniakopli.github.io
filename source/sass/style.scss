@@ -1,3 +1,192 @@
-h1 {
-  color: red;
+@import "normalize.scss";
+
+/* Section "fonts"*/
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url("../fonts/Overpass-SemiBold.woff2") format("woff2"),
+    url("../fonts/Overpass-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Section "common styles"*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 18px;
+}
+
+/* Section "header"*/
+
+.header {
+  background: url(../img/background.jpg) no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  background-position: center top;
+  height: 825px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu__link {
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.line {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 874px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.header__content-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 265px;
+}
+
+.header__content-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+}
+
+.header__content-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+}
+
+.header__content-dscr {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+/* Section "about"*/
+.about__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #1f1f1f;
+}
+/* Section "types_of_bicycles"*/
+.types_of_bicycles__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #1f1f1f;
+}
+/* Section "video"*/
+.video {
+  background-color: #131314;
+}
+
+.video__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+}
+
+/* Section "contacts*/
+
+.contacts__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #1f1f1f;
 }
