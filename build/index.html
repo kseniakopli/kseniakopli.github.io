@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Moon</title>
-    <link rel="stylesheet" href="../build/css/style.min.css.map">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header__top">
-          <nav class="menu">
+      <div class="container header__container">
+          <nav class=" header__menu menu">
             <ul class="menu__list">
               <li class="menu__list-item">
                 <a class="menu__link" href="#about">О нас</a>
@@ -28,101 +26,108 @@
               </li>
             </ul>
           </nav>
-          <div class="line"></div>
-        </div>
+          <div class="header__line"></div>
         <div class="header__content">
           <div class="header__content-right">
             <div class="header__content-logo logo">
-              <a class="logo_link" href="#">
-                <img class="logo__img" src="img/лого.png" alt="">
+              <a class="logo__link" href="#">
+                <img class="logo__img" src="img/logo.png" alt="">
               </a>
             </div>
             <h1 class=" title header__content-title">Мы продаем велосипеды</h1>
             <div class="header__content-dscr">Наш магазин отбирает только самые лучшие велосипеды для продажи</div>
           </div>
-          <form action="" class="header__content-left">
-            <div>Заполните поля ниже и мы подберем велосипед Вашей мечты</div>
-            <input type="text">
-            <input type="text">
-            <button></button>
+          <form action="" class="header__content-left form">
+            <div class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</div>
+            <input type="text" class="form__input" id="name" placeholder="Введите Ваше Имя">
+            <input type="text" class="form__input" id="phone" placeholder="Введите Ваш номер телефона">
+            <button class="form__button" type="submit">Подобрать велосипед мечты </button>
           </form>
         </div>
       </div>
     </header>
     <main>
-      <section id="about">
-        <div class="container">
+      <section class="about" id="about">
+        <div class="container about__container">
           <h2 class="title about__title">Несколько фактов о нас</h2>
-          <div class="about__facts">
-            <div>
-              <h3 class="title">01</h3>
-              <div>Самый широкий выбор велосипедов!</div>
+          <div class="about__facts facts">
+            <div class="facts__item">
+              <h3 class="facts__item-title">01</h3>
+              <div class="facts__item_dscr">Самый широкий выбор велосипедов!</div>
             </div>
-            <div>
-              <h3 class="title">02</h3>
-              <div>Доставка велосипедов по всей России!</div>
+            <div class="facts__item">
+              <h3 class="facts__item-title">02</h3>
+              <div class="facts__item_dscr">Доставка велосипедов по всей России!</div>
             </div>
-            <div>
-              <h3 class="title">03</h3>
-              <div>Большой выбор крутых аксессуаров!</div>
+            <div class="facts__item">
+              <h3 class="facts__item-title">03</h3>
+              <div class="facts__item_dscr">Большой выбор крутых аксессуаров!</div>
             </div>
-            <div>
-              <h3 class="title">04</h3>
-              <div>Профессиональные консультации!</div>
+            <div class="facts__item">
+              <h3 class="facts__item-title">04</h3>
+              <div class="facts__item_dscr">Профессиональные консультации!</div>
             </div>
           </div>
         </div>
       </section>
-      <section id="types_of_bicycles">
-        <div class="container">
+      <section class="types_of_bicycles" id="types_of_bicycles">
+        <div class="container types_of_bicycles__container">
           <h2 class="title types_of_bicycles__title">Виды велосипедов</h2>
-          <div>
-            <div>
-              <img src="" alt="">
-              <h3>Дорожный велосипед</h3>
+          <div class="types_of_bicycles__bikes bikes">
+            <div class="bikes__item city-bicycle">
+              <img src="img/city_ bicycle.jpg" class="bikes__item-photo" alt="City bicycle">
+              <h3 class="bikes__item-title">Дорожный велосипед</h3>
             </div>
-            <div>
-              <img src="" alt="">
-              <h3>Горный велосипед</h3>
+            <div class="bikes__item mountain-bicycle"> 
+              <img src="img/mountain_bicycle.jpg" class="bikes__item-photo" alt="Mountain bicycle">
+              <h3 class="bikes__item-title">Горный велосипед</h3>
             </div>
-            <div>
-              <img src="" alt="">
-              <h3>Детский велосипед</h3>
+            <div class="bikes__item kids-bicycle">
+              <img src="img/kids_bicycle.jpg" class="bikes__item-photo" alt="Kids bicycle">
+              <h3 class="bikes__item-title">Детский велосипед</h3>
             </div>
           </div>
         </div>
       </section>
-      <section id="video">
-        <div class="container">
+      <section class="video" id="video">
+        <div class="container video__container">
           <h2 class="title video__title">Видео про велосипеды</h2>
-          <p>
+          <div class="video__description">
             В этом видео мы подробно расскажем про особенности выбора велосипеда
             для себя
-          </p>
-          <div>
-            <img src="" alt="">
-            <div>
-              <p></p>
-            </div>
+          </div>
+          <div class="video__clip ">
+            <img src="img/videoclip.jpg" class="video__clip-photo" alt="video">
+            <p class="video__clip-icon">&#9658</p>
           </div>
         </div>
       </section>
     </main>
-    <footer id="contacts">
-      <div class="container">
-        <h2 class="title contacts__title">Как нас найти?</h2>
-        <div>
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <h2 class="title footer__title">Как нас найти?</h2>
+        <div class="footer__address">
           Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
         </div>
-        <img src="" alt="">
-        <div>
-          <div>
-            <img src="" alt="">
-            <p></p>
+       <div class="footer__map">
+         <img src="img/map.png" class="footer__map-photo" alt="map">
+        </div>
+          <div class="footer__contacts">
+            <div class="footer__contacts-item contact">
+              <img src="img/email.svg" class="contact__icon" alt="email">
+              <div class="contact__item">
+                <a href="mailto:puteshestviemechta@gmail.ru">
+                  puteshestviemechta@gmail.ru
+                </a>
+              </div>
           </div>
-          <div>
-            <img src="" alt="">
-            <p></p>
+          <div class="footer__contacts-item contact">
+            <img src="img/phone.svg" class="contact__icon" alt="phone">
+            <div class="contact__item">
+              <a href="tel:+749978468446">
+                +7 (499) -784-684-46
+              </a>
+            </div>
           </div>
         </div>
       </div>
