@@ -1,0 +1,127 @@
+.header {
+  background: url(../img/background.jpg) no-repeat;
+  background-color: #000000;
+  background-position: center top;
+  background-size: cover;
+  height: 800px;
+}
+.menu {
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu__link {
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.header__line {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+.header__content-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+}
+
+.header__content-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+}
+
+.header__content-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+}
+
+.header__content-dscr {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.menu__btn {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header__content {
+    flex-direction: column;
+  }
+  .header__content-left {
+    margin-top: 400px;
+  }
+  .menu__btn {
+    display: block;
+  }
+  .menu__list {
+    display: none;
+  }
+  .header__line {
+    display: none;
+  }
+  .menu__btn {
+    display: block;
+    background-color: #0ad9c6;
+  }
+  .header__content-title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu__btn {
+    display: block;
+    background-color: #0ad9c6;
+  }
+  .menu__list {
+    display: none;
+  }
+  .header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__line {
+    display: none;
+  }
+  .header__content-logo {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header__content {
+    margin: 0;
+  }
+  .header__content-left {
+    margin-top: 140px;
+  }
+}
