@@ -37,7 +37,7 @@
 .footer__map img {
   max-width: 100%;
 }
-.contact__item {
+.footer__contacts-item a {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
@@ -60,7 +60,7 @@
     width: 320px;
     height: 250px;
   }
-  .contact__item {
+  .footer__contacts-item {
     line-height: 22px;
     margin:0;
   }
@@ -72,7 +72,7 @@
     width: 698px;
     height: 545px;
   }
-  .contact__item {
+  .footer__contacts-item {
     line-height: 22px;
   }
 }

@@ -1,0 +1,148 @@
+.bikes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.bikes__item img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.mountain_bicycle {
+  margin-top: 40px;
+}
+.city_bicycle,
+.mountain_bicycle,
+.kids_bicycle {
+  position: relative;
+}
+.city_bicycle::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  border: 27px solid #0ad9c6;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: -18%;
+  z-index: -1;
+}
+.mountain_bicycle::before {
+  content: "";
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  border: 8px solid #0ad9c6;
+  top: -3%;
+  left: -5%;
+  z-index: 1;
+}
+
+.mountain_bicycle::after {
+  content: "";
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  border: 8px solid #0ad9c6;
+  top: 83%;
+  left: 92%;
+  z-index: 1;
+}
+
+.kids_bicycle::before {
+  content: "";
+  width: 95px;
+  height: 95px;
+  border: 17px solid #0ad9c6;
+  border-radius: 50%;
+  position: absolute;
+  top: -5%;
+  left: 82%;
+  z-index: 1;
+}
+.bikes__item-title {
+  margin-top: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #000000;
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .bikes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bikes__item img {
+    object-fit: cover;
+    width: 270px;
+    height: 300px;
+  }
+
+  .city_bicycle::before {
+    width: 127px;
+    height: 127px;
+    border: 18px solid #0ad9c6;
+    top: 57%;
+    left: -9%;
+  }
+  .mountain_bicycle::before,
+  .mountain_bicycle::after {
+    display: none;
+  }
+  .kids_bicycle::before {
+    width: 68px;
+    height: 68px;
+    border: 13px solid #0ad9c6;
+    top: 0;
+  }
+  .bikes__item-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bikes {
+    flex-wrap: wrap;
+  }
+  .mountain_bicycle::before,
+  .mountain_bicycle::after {
+    display: none;
+  }
+  .bikes__item {
+    width: 40%;
+  }
+  .mountain_bicycle {
+    margin-top: 0;
+  }
+  .bikes__item img {
+    object-fit: cover;
+    width: 270px;
+    height: 300px;
+  }
+  .city_bicycle::before {
+    width: 127px;
+    height: 127px;
+    border: 18px solid #0ad9c6;
+    top: 52%;
+    left: -10%;
+  }
+  .kids_bicycle::before {
+    width: 68px;
+    height: 68px;
+    border: 13px solid #0ad9c6;
+    top: 0;
+  }
+  .bikes__item-title {
+    margin-bottom: 30px;
+  }
+}

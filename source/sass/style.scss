@@ -1,4 +1,6 @@
 @import "normalize.scss";
+@import "fonts.scss";
+@import "system.scss";
 @import "blocks/about.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
@@ -6,103 +8,7 @@
 @import "blocks/header.scss";
 @import "blocks/types_of_bicycles.scss";
 @import "blocks/video.scss";
+@import "blocks/facts";
+@import "blocks/menu";
+@import "blocks/bikes";
 
-/* Section "fonts"*/
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Light.woff2") format("woff2"),
-    url("../fonts/OpenSans-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
-    url("../fonts/OpenSans-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
-    url("../fonts/OpenSans-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
-    url("../fonts/OpenSans-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Overpass";
-  src: url("../fonts/Overpass-SemiBold.woff2") format("woff2"),
-    url("../fonts/Overpass-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Section "common styles"*/
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-style: normal;
-  font-weight: normal;
-}
-a {
-  text-decoration: none;
-  transition: all 0.5s ease;
-  color: #000000;
-}
-a:hover {
-  color: #0ad9c6;
-  border-bottom: 1px solid #0ad9c6;
-}
-.btn:hover {
-  background: transparent;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-}
-ul,
-li {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1800px;
-  padding: 0 18px;
-}
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.title {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.005em;
-  text-align: center;
-}

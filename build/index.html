@@ -10,43 +10,41 @@
   <body>
     <header class="header">
       <div class="container header__container">
-          <nav class=" header__menu menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__link" href="#about">О нас</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__link" href="#types_of_bicycles">Виды велосипедов</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__link" href="#video">Видео про велосипеды</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__line"></div>
+        <nav class=" header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__link" href="#about">О нас</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#types_of_bicycles">Виды велосипедов</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#video">Видео про велосипеды</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
         <div class="header__content">
           <div class="header__content-right">
             <div class="header__content-logo logo">
               <div class="logo__container">
                 <a class="logo__link" href="#">
-                  <img class="logo__img" src="img/logo.png" alt="">
+                  <img class="logo__img" src="img/logo.png" alt="Логотип" width="67.6" height="20.28">
                 </a>
               </div>
               <button class="menu__btn btn" type="button">
-                <img src="img/menu_icon.svg" alt="">
               </button>
             </div>
             <h1 class=" header__content-title">Мы продаем велосипеды</h1>
-            <div class="header__content-dscr">Наш магазин отбирает только самые лучшие велосипеды для продажи</div>
+            <p class="header__content-dscr">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
-          <form action="" class="header__content-left form">
-            <div class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</div>
-            <input type="text" class="form__input" id="name" placeholder="Введите Ваше Имя" required="">
-            <input type="tel" class="form__input" id="phone" placeholder="Введите Ваш номер телефона" required="">
-            <button class="form__button btn" type="submit">Подобрать велосипед мечты </button>
+          <form class="header__content-left form">
+            <p class="form__description">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <input type="text" id="name" placeholder="Введите Ваше Имя" required="">
+            <input type="tel" id="phone" placeholder="Введите Ваш номер телефона" required="">
+            <button type="submit">Подобрать велосипед мечты </button>
           </form>
         </div>
       </div>
@@ -57,20 +55,20 @@
           <h2 class="title about__title">Несколько фактов о нас</h2>
           <div class="about__facts facts">
             <div class="facts__item">
-              <h3 class="facts__item-title">01</h3>
-              <div class="facts__item_dscr">Самый широкий выбор велосипедов!</div>
+              <span class="facts__item-title">01</span>
+              <p class="facts__item_dscr">Самый широкий выбор велосипедов!</p>
             </div>
             <div class="facts__item">
-              <h3 class="facts__item-title">02</h3>
-              <div class="facts__item_dscr">Доставка велосипедов по всей России!</div>
+              <span class="facts__item-title">02</span>
+              <p class="facts__item_dscr">Доставка велосипедов по всей России!</p>
             </div>
             <div class="facts__item">
-              <h3 class="facts__item-title">03</h3>
-              <div class="facts__item_dscr">Большой выбор крутых аксессуаров!</div>
+              <span class="facts__item-title">03</span>
+              <p class="facts__item_dscr">Большой выбор крутых аксессуаров!</p>
             </div>
             <div class="facts__item">
-              <h3 class="facts__item-title">04</h3>
-              <div class="facts__item_dscr">Профессиональные консультации!</div>
+              <span class="facts__item-title">04</span>
+              <p class="facts__item_dscr">Профессиональные консультации!</p>
             </div>
           </div>
         </div>
@@ -79,16 +77,16 @@
         <div class="container types_of_bicycles__container">
           <h2 class="title types_of_bicycles__title">Виды велосипедов</h2>
           <div class="types_of_bicycles__bikes bikes">
-            <div class="bikes__item city-bicycle">
-              <img src="img/city_ bicycle.jpg" class="bikes__item-photo" alt="City bicycle" width="342" height="503">
+            <div class="bikes__item city_bicycle">
+              <img src="img/city_bicycle.jpg" class="bikes__item-photo" alt="Дорожный велосипед" width="342" height="503">
               <h3 class="bikes__item-title">Дорожный велосипед</h3>
             </div>
-            <div class="bikes__item mountain-bicycle"> 
-              <img src="img/mountain_bicycle.jpg" class="bikes__item-photo" alt="Mountain bicycle" width="342" height="566">
+            <div class="bikes__item mountain_bicycle"> 
+              <img src="img/mountain_bicycle.jpg" class="bikes__item-photo" alt="Горный велосипед" width="342" height="566">
               <h3 class="bikes__item-title">Горный велосипед</h3>
             </div>
-            <div class="bikes__item kids-bicycle">
-              <img src="img/kids_bicycle.jpg" class="bikes__item-photo" alt="Kids bicycle" width="342" height="512">
+            <div class="bikes__item kids_bicycle">
+              <img src="img/kids_bicycle.jpg" class="bikes__item-photo" alt="Детский велосипед" width="342" height="512">
               <h3 class="bikes__item-title">Детский велосипед</h3>
             </div>
           </div>
@@ -97,13 +95,17 @@
       <section class="video" id="video">
         <div class="container video__container">
           <h2 class="title video__title">Видео про велосипеды</h2>
-          <div class="video__description">
+          <p class="video__description">
             В этом видео мы подробно расскажем про особенности выбора велосипеда
             для себя
-          </div>
+          </p>
           <div class="video__clip ">
-            <img src="img/videoclip.jpg" class="video__clip-photo" alt="video" width="929" height="522">
-            <div class="video__clip-icon"><a href="#">&#9658</a></div>
+            <img src="img/videoclip.jpg" class="video__clip-photo" alt="Видео про велосипеды" width="929" height="522">
+            <a href="#">
+              <div class="video__clip-icon">
+                <span>&#9658;</span>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -111,28 +113,22 @@
     <footer class="footer" id="contacts">
       <div class="container footer__container">
         <h2 class="title footer__title">Как нас найти?</h2>
-        <div class="footer__address">
+        <p class="footer__address">
           Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
-        </div>
+        </p>
        <div class="footer__map">
-         <img src="img/map.png" class="footer__map-photo" alt="map" width="957" height="530">
+         <img src="img/map.png" class="footer__map-photo" alt="Карта" width="957" height="530">
         </div>
           <div class="footer__contacts">
-            <div class="footer__contacts-item contact">
-              <img src="img/email.svg" class="contact__icon" alt="email">
-              <div class="contact__item">
-                <a href="mailto:puteshestviemechta@gmail.ru">
-                  puteshestviemechta@gmail.ru
-                </a>
-              </div>
-          </div>
-          <div class="footer__contacts-item contact">
-            <img src="img/phone.svg" class="contact__icon" alt="phone">
-            <div class="contact__item">
-              <a href="tel:+749978468446">
-                +7 (499) -784-684-46
+            <div class="footer__contacts-item">
+              <a href="mailto:puteshestviemechta@gmail.ru">
+                puteshestviemechta@gmail.ru
               </a>
             </div>
+          <div class="footer__contacts-item">
+            <a href="tel:+749978468446">
+              +7 (499) -784-684-46
+            </a>
           </div>
         </div>
       </div>

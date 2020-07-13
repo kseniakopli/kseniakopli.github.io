@@ -14,7 +14,7 @@
   mix-blend-mode: normal;
 }
 
-.form__input {
+.form input {
   background: #ffffff;
   border: 1px solid #c9ccd4;
   box-sizing: border-box;
@@ -22,7 +22,7 @@
   min-height: 48px;
 }
 
-input::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
@@ -33,7 +33,7 @@ input::-webkit-input-placeholder {
   padding-left: 30px;
 }
 
-.form__button {
+.form button {
   background: #0ad9c6;
   border-radius: 6px;
   font-family: "Overpass";
@@ -46,11 +46,17 @@ input::-webkit-input-placeholder {
   min-height: 51px;
   border: none;
 }
+
+.form button:hover {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .form__description {
     color: #000000;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-
 }
