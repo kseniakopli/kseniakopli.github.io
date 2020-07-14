@@ -11,15 +11,15 @@
   max-width: 100%;
 }
 
-.mountain_bicycle {
+.bikes__item--mountain_bicycle {
   margin-top: 40px;
 }
-.city_bicycle,
-.mountain_bicycle,
-.kids_bicycle {
+.bikes__item--city_bicycle,
+.bikes__item--mountain_bicycle,
+.bikes__item--kids_bicycle {
   position: relative;
 }
-.city_bicycle::before {
+.bikes__item--city_bicycle::before {
   content: "";
   width: 180px;
   height: 180px;
@@ -30,7 +30,7 @@
   left: -18%;
   z-index: -1;
 }
-.mountain_bicycle::before {
+.bikes__item--mountain_bicycle::before {
   content: "";
   width: 47px;
   height: 47px;
@@ -41,7 +41,7 @@
   z-index: 1;
 }
 
-.mountain_bicycle::after {
+.bikes__item--mountain_bicycle::after {
   content: "";
   width: 47px;
   height: 47px;
@@ -52,7 +52,7 @@
   z-index: 1;
 }
 
-.kids_bicycle::before {
+.bikes__item--kids_bicycle::before {
   content: "";
   width: 95px;
   height: 95px;
@@ -88,18 +88,18 @@
     height: 300px;
   }
 
-  .city_bicycle::before {
+  .bikes__item--city_bicycle::before {
     width: 127px;
     height: 127px;
     border: 18px solid #0ad9c6;
     top: 57%;
     left: -9%;
   }
-  .mountain_bicycle::before,
-  .mountain_bicycle::after {
+  .bikes__item--mountain_bicycle::before,
+  .bikes__item--mountain_bicycle::after {
     display: none;
   }
-  .kids_bicycle::before {
+  .bikes__item--kids_bicycle::before {
     width: 68px;
     height: 68px;
     border: 13px solid #0ad9c6;
@@ -114,14 +114,14 @@
   .bikes {
     flex-wrap: wrap;
   }
-  .mountain_bicycle::before,
-  .mountain_bicycle::after {
+  .bikes__item--mountain_bicycle::before,
+  .bikes__item--mountain_bicycle::after {
     display: none;
   }
   .bikes__item {
     width: 40%;
   }
-  .mountain_bicycle {
+  .bikes__item--mountain_bicycle {
     margin-top: 0;
   }
   .bikes__item img {
@@ -129,14 +129,14 @@
     width: 270px;
     height: 300px;
   }
-  .city_bicycle::before {
+  .bikes__item--city_bicycle::before {
     width: 127px;
     height: 127px;
     border: 18px solid #0ad9c6;
-    top: 52%;
-    left: -10%;
+    top: 51%;
+    left: -8%;
   }
-  .kids_bicycle::before {
+  .bikes__item--kids_bicycle::before {
     width: 68px;
     height: 68px;
     border: 13px solid #0ad9c6;

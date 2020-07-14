@@ -53,10 +53,14 @@
   color: #ffffff;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .form__description {
     color: #000000;
+    font-size: 18px;
+    padding-top:70px; 
+    margin-bottom: 30px;
   }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
+  .form input{
+    margin-bottom: 20px;
+  }
 }

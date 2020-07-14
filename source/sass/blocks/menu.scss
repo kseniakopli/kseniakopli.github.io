@@ -1,6 +1,7 @@
 .menu {
   padding-top: 25px;
   margin-bottom: 10px;
+  position: relative;
 }
 .menu__list {
   display: flex;
@@ -11,9 +12,8 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 10px;
   margin-left: 130px;
-  margin-right:130px;
+  margin-right: 130px;
 }
-
 .menu__link {
   text-transform: uppercase;
   font-family: "Open Sans";
@@ -27,7 +27,7 @@
   text-decoration: none;
   transition: all 0.5s ease;
 }
-.menu__link:hover{
+.menu__link:hover {
   color: #0ad9c6;
   border-bottom: 1px solid #0ad9c6;
 }
@@ -36,25 +36,70 @@
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .menu__btn {
-    display: block;
-  }
-  .menu__list {
-    display: none;
-  }
-  .menu__btn {
-    display: block;
-    background-color: #0ad9c6;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 1024px) {
+  
+  .menu {
+    padding: 0;
+    margin:0; 
+  }
   .menu__btn {
     display: block;
     background-color: #0ad9c6;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    background: url("../img/menu_icon.svg") #0ad9c6 no-repeat center;
+    border: none;
+    z-index: 2;
   }
   .menu__list {
     display: none;
+    margin:0;
   }
+
+  .menu--opened .menu__list {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 3;
+    border-bottom:none;
+    flex-direction: column;
+    padding: 100px 0 140px;
+
+  }
+
+  .menu--opened .menu__btn {
+    background: url("../img/menu_closed_icon.svg") #ffffff no-repeat center;
+    z-index: 4;
+  }
+
+  .menu__link {
+    display: block;
+    position: relative;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    margin-bottom: 28px;
+    background-color: #f6f6f6;
+    font-size: 20px;
+    line-height: 28px;
+    color: #48494d;
+  }
+  
+  .menu__link::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    right:12px;
+    transform: translateY(-50%);
+    background: url("../img/menu_arrow_icon.svg") no-repeat center;
+    z-index: 10;
+  }
+
 }
