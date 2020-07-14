@@ -2,7 +2,9 @@
 
 .types_of_bicycles {
   background: #f6f7f9;
-  height: 1000px;
+  height: auto;
+  overflow: hidden;
+  padding-bottom:147px;
 }
 .types_of_bicycles__title {
   padding-top: 150px;
@@ -17,5 +19,12 @@
   }
   .types_of_bicycles {
     height: auto;
+    padding-bottom:22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .types_of_bicycles {
+    padding-bottom:50px;
   }
 }
