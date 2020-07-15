@@ -7,7 +7,6 @@
 .container {
   margin: 0 auto;
   max-width: 1800px;
-  padding: 0 18px;
 }
 
 .title {
@@ -23,4 +22,10 @@
 
 main {
   margin-bottom: 250px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  main {
+    margin-bottom: 120px;
+  }
 }

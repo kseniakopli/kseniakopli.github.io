@@ -4,11 +4,16 @@
   background: #f6f7f9;
   height: auto;
   overflow: hidden;
-  padding-bottom:147px;
+  padding-bottom: 125px;
 }
 .types_of_bicycles__title {
   padding-top: 150px;
   color: #1f1f1f;
+  max-width: 288px;
+  margin-left: 525px;
+}
+.types_of_bicycles__container {
+  max-width: 1320px;
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
@@ -16,15 +21,24 @@
     padding-top: 50px;
     font-size: 24px;
     line-height: 41px;
+    margin-left: 0px;
+    letter-spacing: -0.005em;
   }
   .types_of_bicycles {
     height: auto;
-    padding-bottom:22px;
+    padding-bottom: 22px;
+  }
+  .types_of_bicycles__container {
+    padding-left: 2px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .types_of_bicycles {
-    padding-bottom:50px;
+    padding-bottom: 35px;
+  }
+  .types_of_bicycles__title {
+    max-width: 288;
+    margin: 0 auto;
   }
 }

@@ -1,6 +1,6 @@
 .form {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .form__description {
   font-family: "Open Sans";
@@ -12,6 +12,8 @@
   letter-spacing: -0.005em;
   color: #ffffff;
   mix-blend-mode: normal;
+  margin: 0;
+  margin-top: 4px;
 }
 
 .form input {
@@ -30,7 +32,7 @@
   line-height: 24px;
   color: #1c1c1c;
   opacity: 0.5;
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .form button {
@@ -57,10 +59,24 @@
   .form__description {
     color: #000000;
     font-size: 18px;
-    padding-top:70px; 
+    padding-top: 65px;
+    margin-bottom: 22px;
+  }
+  .form input {
+    margin-bottom: 20px;
+  }
+
+  .form {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form__description {
     margin-bottom: 30px;
   }
-  .form input{
-    margin-bottom: 20px;
+  .form input::-webkit-input-placeholder {
+    padding-left: 18px;
+
   }
 }

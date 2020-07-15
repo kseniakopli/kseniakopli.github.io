@@ -4,23 +4,39 @@
 }
 .about__title {
   padding-top: 150px;
+  text-align: center;
   color: #1f1f1f;
+  max-width: 362px;
+  margin-left: 503px;
+}
+
+.about__container {
+  max-width: 1320px;
 }
 @media (min-width: 320px) and (max-width: 1024px) {
-  .about{
+  .about {
     margin-bottom: 0;
   }
   .about__title {
     padding-top: 70px;
-    margin-bottom: 30px;
+    margin-left: 0;
     font-size: 24px;
     line-height: 41px;
+    padding-left: 7px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .about{
-    margin-bottom: 70px;
+  .about {
+    margin-bottom: 30px;
   }
-
+  .about__title {
+    max-width: 290;
+    margin: 0 auto;
+    padding-left: 40px;
+  }
+  .about__container {
+    padding-left: 40px;
+    padding-right: 80px;
+  }
 }

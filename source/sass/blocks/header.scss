@@ -3,25 +3,31 @@
   background-color: #000000;
   background-position: center top;
   background-size: cover;
-  height: 800px;
+  height: auto;
 }
-
+.header__container {
+  max-width: 950px;
+  margin: 0 auto;
+}
 .header__content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 200px;
+  padding-bottom: 240px;
 }
 
 .header__content-right {
   display: flex;
   flex-direction: column;
-  max-width: 380px;
+  max-width: 400px;
+  padding-left: 53px;
 }
 
 .header__content-left {
   display: flex;
   flex-direction: column;
-  max-width: 330px;
+  max-width: 327px;
+  margin-right: 17px;
 }
 
 .header__content-title {
@@ -32,6 +38,10 @@
   line-height: 64px;
   letter-spacing: -0.005em;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 24px;
 }
 
 .header__content-dscr {
@@ -44,13 +54,15 @@
   color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.8;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
   .header {
     background: none;
     margin: 0;
-    height:auto;
+    height: auto;
   }
 
   .header__content-right {
@@ -62,35 +74,52 @@
     height: auto;
     z-index: 1;
     max-width: none;
+    padding-left: 0;
   }
 
   .header__content {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+    padding-bottom: 0;
   }
 
   .header__content-logo {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 25px;
+    padding-left: 17px;
     margin-bottom: 70px;
   }
 
   .header__content-title {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 4px;
+    
   }
-  .header__content-dscr{
+  .header__content-dscr {
     text-align: center;
     margin-bottom: 70px;
     max-width: 435px;
     margin-left: auto;
-    margin-right:auto;
-    }
+    margin-right: auto;
+    font-size: 18px;
+  }
 
-
-   
   .header__container {
     padding: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__content-title {
+    margin-top:15px;
+    margin-bottom: 20px;
+  }
+  .header__content-dscr {
+    margin-bottom: 80px;
+  }
+  .header__content-left {
+    max-width: 337px;
   }
 }
