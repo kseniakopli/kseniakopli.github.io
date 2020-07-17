@@ -48,7 +48,13 @@
   font-size: 16px;
   line-height: 32px;
   color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
+.footer__contacts-item a:hover {
+  color: #0ad9c6;
+  border-bottom: 1px solid #0ad9c6;
+}
+
 .footer__contacts-item {
   position: relative;
   margin-right: 90px;
@@ -117,7 +123,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .footer__map img {
     object-fit: cover;
     width: 698px;
@@ -125,7 +131,10 @@
   }
   .footer__contacts-item {
     line-height: 22px;
+    margin-left:36px;
+
   }
+
   .footer__title {
     font-size: 24px;
     padding-top: 0;
@@ -150,7 +159,5 @@
   .footer__container {
     padding-left:0;
   }
-  .footer__contacts-item{
-    margin-left:36px;
-  }
+
 }
