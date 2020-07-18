@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 .form__description {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -25,7 +25,7 @@
 }
 
 .form input::-webkit-input-placeholder {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -38,7 +38,7 @@
 .form button {
   background: #0ad9c6;
   border-radius: 6px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;

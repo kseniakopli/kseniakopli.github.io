@@ -4,6 +4,10 @@
   background-position: center top;
   background-size: cover;
   height: auto;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/background_2x.jpg");
+  }
 }
 .header__container {
   max-width: 950px;
@@ -31,7 +35,7 @@
 }
 
 .header__content-title {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 46px;
@@ -45,7 +49,7 @@
 }
 
 .header__content-dscr {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -75,6 +79,9 @@
     z-index: 1;
     max-width: none;
     padding-left: 0;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/background_mobile_2x.jpg");
+    }
   }
 
   .header__content {

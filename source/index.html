@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Moon</title>
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/OpenSans-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <nav class="header__menu menu menu--closed">
+        <nav class="header__menu menu menu--closed menu--nojs">
           <button class="menu__btn" type="button"></button>
           <ul class="menu__list">
             <li class="menu__list-item">
@@ -101,33 +129,60 @@
           <h2 class="title types_of_bicycles__title">Виды велосипедов</h2>
           <div class="types_of_bicycles__bikes bikes">
             <div class="bikes__item bikes__item--city_bicycle">
-              <img
-                src="img/city_bicycle.jpg"
-                class="bikes__item-photo"
-                alt="Дорожный велосипед"
-                width="342"
-                height="503"
-              />
+              <picture>
+                <source
+                  srcset="img/city_bicycle.webp 1x, img/city_bicycle_2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="bikes__item-photo"
+                  width="342"
+                  height="503"
+                  src="img/city_bicycle.jpg"
+                  loading="lazy"
+                  srcset="img/city_bicycle_2x.jpg 2x"
+                  alt="Дорожный велосипед"
+                />
+              </picture>
               <h3 class="bikes__item-title">Дорожный велосипед</h3>
             </div>
             <div class="bikes__item bikes__item--mountain_bicycle">
-              <img
-                src="img/mountain_bicycle.jpg"
-                class="bikes__item-photo"
-                alt="Горный велосипед"
-                width="342"
-                height="566"
-              />
+              <picture>
+                <source
+                  srcset="
+                    img/mountain_bicycle.webp    1x,
+                    img/mountain_bicycle_2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="bikes__item-photo"
+                  width="342"
+                  height="566"
+                  src="img/mountain_bicycle.jpg"
+                  loading="lazy"
+                  srcset="img/mountain_bicycle_2x.jpg 2x"
+                  alt="Горный велосипед"
+                />
+              </picture>
               <h3 class="bikes__item-title">Горный велосипед</h3>
             </div>
             <div class="bikes__item bikes__item--kids_bicycle">
-              <img
-                src="img/kids_bicycle.jpg"
-                class="bikes__item-photo"
-                alt="Детский велосипед"
-                width="342"
-                height="512"
-              />
+              <picture>
+                <source
+                  srcset="img/kids_bicycle.webp 1x, img/kids_bicycle_2x.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  class="bikes__item-photo"
+                  width="342"
+                  height="512"
+                  src="img/kids_bicycle.jpg"
+                  loading="lazy"
+                  srcset="img/kids_bicycle_2x.jpg 2x"
+                  alt="Детский велосипед"
+                />
+              </picture>
               <h3 class="bikes__item-title">Детский велосипед</h3>
             </div>
           </div>
@@ -141,13 +196,21 @@
             для себя
           </p>
           <div class="video__clip">
-            <img
-              src="img/videoclip.jpg"
-              class="video__clip-photo"
-              alt="Видео про велосипеды"
-              width="929"
-              height="522"
-            />
+            <picture>
+              <source
+                srcset="img/videoclip.webp 1x, img/videoclip-2x.webp 2x"
+                type="image/webp"
+              />
+              <img
+                class="video__clip-photo"
+                width="929"
+                height="522"
+                src="img/videoclip.jpg"
+                srcset="img/videoclip-2x.jpg 2x"
+                loading="lazy"
+                alt="Видео про велосипеды"
+              />
+            </picture>
             <a href="#">
               <div class="video__clip-icon">
                 <span>&#9658;</span>
@@ -164,13 +227,21 @@
           Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
         </p>
         <div class="footer__map">
-          <img
-            src="img/map.png"
-            class="footer__map-photo"
-            alt="Карта"
-            width="957"
-            height="530"
-          />
+          <picture>
+            <source
+              srcset="img/map.webp 1x, img/map-2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              class="footer__map-photo"
+              width="957"
+              height="530"
+              src="img/map.png"
+              srcset="map-2x.png 2x"
+              loading="lazy"
+              alt="Карта"
+            />
+          </picture>
         </div>
         <div class="footer__contacts">
           <div class="footer__contacts-item">
@@ -192,6 +263,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -3,6 +3,8 @@ const menu = document.querySelector(".menu");
 const menuButton = menu.querySelector(".menu__btn");
 const menuLink = menu.querySelectorAll(".menu__link");
 
+menu.classList.remove("menu--nojs");
+
 //События
 menuButton.addEventListener("click", function () {
   applyChanges();
