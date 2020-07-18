@@ -15,7 +15,9 @@
     <header class="header">
       <div class="container header__container">
         <nav class="header__menu menu menu--closed menu--nojs">
-          <button class="menu__btn" type="button"></button>
+          <button class="menu__btn" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
           <ul class="menu__list">
             <li class="menu__list-item">
               <a class="menu__link" href="#about">О нас</a>
@@ -49,7 +51,17 @@
             <p class="form__description">
               Заполните поля ниже и мы подберем велосипед Вашей мечты
             </p>
+            <label for="name">
+              <span class="visually-hidden">
+                Имя
+              </span>
+            </label>
             <input type="text" id="name" placeholder="Введите Ваше Имя" required="">
+            <label for="phone">
+              <span class="visually-hidden">
+                Телефон
+              </span>
+            </label>
             <input type="tel" id="phone" placeholder="Введите Ваш номер телефона" required="">
             <button type="submit">Подобрать велосипед мечты</button>
           </form>

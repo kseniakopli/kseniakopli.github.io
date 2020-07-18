@@ -365,6 +365,13 @@ template {
 main {
   margin-bottom: 250px; }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
 @media (min-width: 320px) and (max-width: 1023px) {
   main {
     margin-bottom: 120px; } }
@@ -376,9 +383,7 @@ main {
 .about__title {
   padding-top: 150px;
   text-align: center;
-  color: #1f1f1f;
-  max-width: 362px;
-  margin-left: 503px; }
+  color: #1f1f1f; }
 
 .about__container {
   max-width: 1320px; }
@@ -390,16 +395,14 @@ main {
     padding-top: 70px;
     margin-left: 0;
     font-size: 24px;
-    line-height: 41px;
-    padding-left: 7px; } }
+    line-height: 41px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .about {
     margin-bottom: 30px; }
   .about__title {
     max-width: 290;
-    margin: 0 auto;
-    padding-left: 40px; }
+    margin: 0 auto; }
   .about__container {
     padding-left: 40px;
     padding-right: 80px; } }
@@ -585,22 +588,30 @@ main {
   margin-top: 4px; }
 
 .form input {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   background: #ffffff;
   border: 1px solid #c9ccd4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  min-height: 48px; }
+  min-height: 48px;
+  margin-bottom: 20px;
+  padding-left: 28px;
+  width: 100%;
+  height: 48px;
+  font-size: 15px;
+  line-height: 24px; }
+
+.form input:hover,
+.form input:focus {
+  background: #E0FFFF; }
 
 .form input::-webkit-input-placeholder {
-  font-family: "Open Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 24px;
+  font: inherit;
   color: #1c1c1c;
-  opacity: 0.5;
-  padding-left: 25px; }
+  opacity: 0.5; }
 
 .form button {
   background: #0ad9c6;
@@ -767,7 +778,10 @@ main {
   .header__content-dscr {
     margin-bottom: 80px; }
   .header__content-left {
-    max-width: 337px; } }
+    max-width: 337px; }
+  .header__container {
+    max-width: 1023px;
+    margin: 0; } }
 
 /* Section "types_of_bicycles"*/
 .types_of_bicycles {
@@ -778,12 +792,12 @@ main {
 
 .types_of_bicycles__title {
   padding-top: 150px;
-  color: #1f1f1f;
-  max-width: 288px;
-  margin-left: 525px; }
+  color: #1f1f1f; }
 
 .types_of_bicycles__container {
-  max-width: 1320px; }
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 6%; }
 
 @media (min-width: 320px) and (max-width: 1023px) {
   .types_of_bicycles__title {
@@ -801,9 +815,10 @@ main {
 @media (min-width: 768px) and (max-width: 1023px) {
   .types_of_bicycles {
     padding-bottom: 35px; }
-  .types_of_bicycles__title {
-    max-width: 288;
-    margin: 0 auto; } }
+  .types_of_bicycles__container {
+    width: 77%;
+    padding-left: 2%;
+    padding-right: 2%; } }
 
 /* Section "video"*/
 .video {
@@ -1106,18 +1121,17 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 60px;
   position: relative;
   z-index: 1; }
 
 .bikes__item {
-  margin-right: 50px; }
-
-.bikes__item:first-child {
-  margin-left: 105px; }
+  max-width: 30%; }
 
 .bikes__item:last-child {
   margin-top: -1%; }
@@ -1231,22 +1245,22 @@ main {
   .bikes {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-top: 30px; }
   .bikes__item,
-  .bikes__item:first-child {
+  .bikes__item:first-child,
+  .bikes__item--mountain_bicycle {
+    margin: 0; }
+  .bikes__item,
+  .bikes__item-title {
+    width: 270px; }
+  .bikes__item-title {
     margin: 0;
-    margin-left: 20px;
-    margin-bottom: 5px; }
+    margin-bottom: 30px; }
   .bikes__item--mountain_bicycle::before,
   .bikes__item--mountain_bicycle::after {
     display: none; }
   .bikes__item {
-    width: 39%; }
-  .bikes__item--mountain_bicycle {
-    margin-top: 0; }
+    width: 45%; }
   .bikes__item--kids_bicycle .bikes__item-title {
     margin-top: 37px; }
   .bikes__item img {
@@ -1265,6 +1279,4 @@ main {
     height: 68px;
     border: 13px solid #0ad9c6;
     top: 0;
-    left: 76%; }
-  .bikes__item-title {
-    margin-bottom: 30px; } }
+    left: 76%; } }

@@ -24,6 +24,15 @@ main {
   margin-bottom: 250px;
 }
 
+.visually-hidden
+ {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 @media (min-width: 320px) and (max-width: 1023px) {
   main {
     margin-bottom: 120px;

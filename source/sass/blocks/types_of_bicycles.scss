@@ -9,11 +9,11 @@
 .types_of_bicycles__title {
   padding-top: 150px;
   color: #1f1f1f;
-  max-width: 288px;
-  margin-left: 525px;
 }
 .types_of_bicycles__container {
   max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 6%;
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {
@@ -36,9 +36,11 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .types_of_bicycles {
     padding-bottom: 35px;
-  }
-  .types_of_bicycles__title {
-    max-width: 288;
-    margin: 0 auto;
-  }
+
+}
+.types_of_bicycles__container{
+  width: 77%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
 }
