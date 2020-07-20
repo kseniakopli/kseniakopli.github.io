@@ -1,4 +1,3 @@
-/* Section "video"*/
 .video {
   background-color: #131314;
   height: 706px;
@@ -11,9 +10,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;;
-  margin:0 auto;
-  padding:0 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 .video__title {
@@ -44,6 +43,7 @@
 .video__clip img {
   max-width: 100%;
 }
+
 .video__clip-btn {
   position: absolute;
   width: 65px;
@@ -60,9 +60,8 @@
 
 .video__clip-btn:hover,
 .video__clip-btn:focus,
-.video__clip-btn:active
- {
-  background: #E0FFFF;
+.video__clip-btn:active {
+  background: #e0ffff;
   border: none;
   outline: none;
 }
@@ -77,13 +76,13 @@
   border-width: 10px 0 10px 13px;
   border-style: solid;
   border-right: 0;
-  border-color:transparent transparent transparent black;
+  border-color: transparent transparent transparent black;
 }
-
 
 @media (min-width: 320px) and (max-width: 767px) {
   .video {
     height: 384px;
+    margin-bottom: 118px;
   }
 
   .video__clip img {
@@ -102,28 +101,29 @@
     padding-left: 10px;
   }
 
-  .video__clip::before {
-    top: 30%;
+  .video__clip-btn::before {
+    top: 35%;
     left: 40%;
   }
 
-  .video__clip-icon {
-    top: 43%;
-    left: 48%;
+  .video__clip-btn {
+    top: 30%;
+    left: 39%;
   }
 
   .video__container {
-    padding-left:0;
+    padding: 0 5px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .video {
     height: 413px;
+    margin-bottom: 118px;
   }
 
   .video__container {
-    padding-left:0;
+    padding: 0 5px;
   }
 
   .video__clip img {
@@ -131,27 +131,27 @@
     height: 282px;
   }
 
-  .video__clip::before {
+  .video__clip-btn {
     width: 90.36px;
     height: 90.36px;
     top: 34%;
     left: 41%;
   }
 
-  .video__clip-icon {
+  .video__clip-btn::before {
     font-size: 30px;
-    top: 44%;
-    left: 48%;
+    top: 38%;
+    left: 45%;
   }
 
   .video__title {
-    padding-top: 70px;
+    padding-top: 68px;
     margin: 0;
     font-size: 24px;
   }
 
   .video__description {
     margin-bottom: 40px;
-    max-width:430px ;
+    max-width: 430px;
   }
 }

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .form__description {
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-style: normal;
@@ -33,10 +34,10 @@
   font-size: 15px;
   line-height: 24px;
 }
+
 .form input:hover,
-.form input:focus
-{
-  background: #E0FFFF;
+.form input:focus {
+  background: #e0ffff;
 }
 
 .form input::-webkit-input-placeholder {
@@ -55,7 +56,6 @@
   line-height: 14px;
   text-align: center;
   color: #000000;
-  min-height: 51px;
   border: none;
   cursor: pointer;
   min-height: 50px;
@@ -73,9 +73,10 @@
   .form__description {
     color: #000000;
     font-size: 18px;
-    margin-top:65px;
+    margin-top: 65px;
     margin-bottom: 22px;
   }
+
   .form input {
     margin-bottom: 20px;
   }
@@ -89,6 +90,7 @@
   .form__description {
     margin-bottom: 30px;
   }
+
   .form input::-webkit-input-placeholder {
     padding-left: 18px;
   }

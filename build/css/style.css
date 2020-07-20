@@ -7,9 +7,7 @@
  */
 html {
   line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 1 */ }
 
 /* Sections
    ========================================================================== */
@@ -53,7 +51,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -73,8 +71,6 @@ a {
 abbr[title] {
   border-bottom: none;
   /* 1 */
-  text-decoration: underline;
-  /* 2 */
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
   /* 2 */ }
@@ -93,7 +89,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
@@ -170,12 +166,6 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
-
 /**
  * Remove the inner border and padding in Firefox.
  */
@@ -258,24 +248,17 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
   outline-offset: -2px;
   /* 2 */ }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
   font: inherit;
   /* 2 */ }
 
@@ -343,8 +326,8 @@ template {
   font-display: swap; }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -378,8 +361,7 @@ template {
   padding-left: 15px;
   text-align: center;
   color: #1f1f1f;
-  margin: 0;
-  color: #1f1f1f; }
+  margin: 0; }
 
 .about__container {
   max-width: 1150px;
@@ -404,8 +386,7 @@ template {
     max-width: 290;
     margin: 0 auto; }
   .about__container {
-    padding-left: 40px;
-    padding-right: 80px; } }
+    padding: 0 105px; } }
 
 .footer {
   position: relative;
@@ -516,9 +497,9 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 22px;
+    margin-top: 24px;
     margin-bottom: 36px;
-    margin-left: 50px; }
+    width: 100%; }
   .footer__container {
     padding-left: 0; }
   .footer__map {
@@ -528,19 +509,29 @@ template {
        object-fit: cover;
     width: 320px;
     height: 250px; }
+  .footer__contacts-item--email {
+    margin-bottom: 23px;
+    padding-left: 50px; }
+  .footer__contacts-item--phone {
+    padding-left: 25px; }
   .footer__contacts-item {
     line-height: 22px;
     margin: 0;
-    margin-bottom: 10px; }
+    margin-bottom: 15px; }
   .footer__title {
     font-size: 18px;
     margin: 0;
     padding: 0; }
   .footer__address {
     margin-top: 20px;
-    max-width: 270px;
-    margin-left: auto;
-    margin-right: auto; } }
+    padding: 0 25px;
+    width: 100%; }
+  .footer__contacts-item--email::before {
+    top: 15%;
+    left: 10px; }
+  .footer__contacts-item--phone::before {
+    top: -7%;
+    left: -10px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .footer__map img {
@@ -549,8 +540,7 @@ template {
     width: 698px;
     height: 545px; }
   .footer__contacts-item {
-    line-height: 22px;
-    margin-left: 36px; }
+    line-height: 22px; }
   .footer__title {
     font-size: 24px;
     padding-top: 0;
@@ -563,12 +553,14 @@ template {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 10px;
-    margin-bottom: 52px; }
+    margin-bottom: 52px;
+    width: 78%; }
   .footer__address {
-    max-width: 630px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 15px; }
   .footer__container {
     padding-left: 0; } }
 
@@ -613,7 +605,7 @@ template {
 
 .form input:hover,
 .form input:focus {
-  background: #E0FFFF; }
+  background: #e0ffff; }
 
 .form input::-webkit-input-placeholder {
   font: inherit;
@@ -630,7 +622,6 @@ template {
   line-height: 14px;
   text-align: center;
   color: #000000;
-  min-height: 51px;
   border: none;
   cursor: pointer;
   min-height: 50px;
@@ -660,7 +651,7 @@ template {
     padding-left: 18px; } }
 
 .header {
-  background: url(../img/background.jpg) no-repeat;
+  background: url("../img/background.jpg") no-repeat;
   background-color: #000000;
   background-position: center top;
   background-size: cover;
@@ -735,7 +726,7 @@ template {
     margin: 0;
     height: auto; }
   .header__content-right {
-    background: url(../img/background_mobile.jpg) no-repeat;
+    background: url("../img/background_mobile.jpg") no-repeat;
     background-color: #000000;
     background-position: center top;
     background-size: cover;
@@ -787,12 +778,12 @@ template {
   .header__content-dscr {
     margin-bottom: 80px; }
   .header__content-left {
-    max-width: 337px; }
+    max-width: 337px;
+    padding: 0; }
   .header__container {
     max-width: 1023px;
     margin: 0; } }
 
-/* Section "types_of_bicycles"*/
 .types-of-bicycles {
   background: #f6f7f9;
   height: auto;
@@ -810,26 +801,24 @@ template {
 
 @media (min-width: 320px) and (max-width: 1023px) {
   .types-of-bicycles__title {
-    padding-top: 50px;
+    padding-top: 55px;
     font-size: 24px;
     line-height: 41px;
-    margin-left: 0px;
+    margin-left: 0;
     letter-spacing: -0.005em; }
   .types-of-bicycles {
     height: auto;
-    padding-bottom: 22px; }
+    padding-bottom: 15px; }
   .types-of-bicycles__container {
-    padding-left: 2px; } }
+    padding-left: 2px;
+    width: 90%; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .types-of-bicycles {
-    padding-bottom: 35px; }
+    padding-bottom: 40px; }
   .types-of-bicycles__container {
-    width: 77%;
-    padding-left: 2%;
-    padding-right: 2%; } }
+    margin: 0 auto; } }
 
-/* Section "video"*/
 .video {
   background-color: #131314;
   height: 706px;
@@ -893,7 +882,7 @@ template {
 .video__clip-btn:hover,
 .video__clip-btn:focus,
 .video__clip-btn:active {
-  background: #E0FFFF;
+  background: #e0ffff;
   border: none;
   outline: none; }
 
@@ -911,7 +900,8 @@ template {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .video {
-    height: 384px; }
+    height: 384px;
+    margin-bottom: 118px; }
   .video__clip img {
     width: 288px;
     height: 161.66px; }
@@ -922,34 +912,35 @@ template {
   .video__description {
     margin-bottom: 50px;
     padding-left: 10px; }
-  .video__clip::before {
-    top: 30%;
+  .video__clip-btn::before {
+    top: 35%;
     left: 40%; }
-  .video__clip-icon {
-    top: 43%;
-    left: 48%; }
+  .video__clip-btn {
+    top: 30%;
+    left: 39%; }
   .video__container {
-    padding-left: 0; } }
+    padding: 0 5px; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .video {
-    height: 413px; }
+    height: 413px;
+    margin-bottom: 118px; }
   .video__container {
-    padding-left: 0; }
+    padding: 0 5px; }
   .video__clip img {
     width: 503px;
     height: 282px; }
-  .video__clip::before {
+  .video__clip-btn {
     width: 90.36px;
     height: 90.36px;
     top: 34%;
     left: 41%; }
-  .video__clip-icon {
+  .video__clip-btn::before {
     font-size: 30px;
-    top: 44%;
-    left: 48%; }
+    top: 38%;
+    left: 45%; }
   .video__title {
-    padding-top: 70px;
+    padding-top: 68px;
     margin: 0;
     font-size: 24px; }
   .video__description {
@@ -1019,7 +1010,6 @@ template {
   .facts__item,
   .facts__item:first-child {
     margin: 0;
-    margin-bottom: 35px;
     width: 100%;
     padding-left: 0;
     margin-bottom: 43px; }
@@ -1033,15 +1023,16 @@ template {
   .facts {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 31px; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 32px; }
+  .facts__item:nth-child(2n) {
+    margin-right: 0; }
   .facts__item {
-    width: 40%;
+    width: 45%;
     padding: 0;
-    margin-bottom: 40px;
-    margin-left: 35px; } }
+    margin-bottom: 40px; } }
 
 .menu {
   padding-top: 21px;
@@ -1095,7 +1086,6 @@ template {
     margin: 0; }
   .menu__btn {
     display: block;
-    background-color: #0ad9c6;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -1106,6 +1096,8 @@ template {
   .menu__list {
     display: none;
     margin: 0; }
+  .menu__list-item {
+    margin-right: 0; }
   .menu--opened .menu__list {
     display: block;
     position: absolute;
@@ -1232,7 +1224,6 @@ template {
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;
-  text-align: center;
   letter-spacing: -0.5px;
   color: #000000;
   text-align: center; }
@@ -1255,11 +1246,13 @@ template {
   .bikes__item,
   .bikes__item:first-child {
     margin: 0; }
+  .bikes__item:nth-child(3n) {
+    margin-top: 1%; }
   .bikes__item--city-bicycle::before {
     width: 127px;
     height: 127px;
     border: 18px solid #0ad9c6;
-    top: 53%;
+    top: 51%;
     left: -9%; }
   .bikes__item--mountain-bicycle::before,
   .bikes__item--mountain-bicycle::after {
@@ -1268,7 +1261,8 @@ template {
     width: 68px;
     height: 68px;
     border: 13px solid #0ad9c6;
-    top: 0; }
+    top: -5%;
+    left: 80%; }
   .bikes__item-title {
     margin-bottom: 40px; }
   .bikes__item:first-child {
@@ -1278,22 +1272,31 @@ template {
   .bikes {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 30px; }
   .bikes__item,
   .bikes__item:first-child,
   .bikes__item--mountain-bicycle {
-    margin: 0; }
-  .bikes__item,
-  .bikes__item-title {
-    width: 270px; }
+    width: 40%;
+    margin-top: 0; }
+  .bikes__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .bikes__item:nth-child(2n) {
+    margin-right: 0; }
+  .bikes__item:nth-child(3n) {
+    margin-top: 0; }
   .bikes__item-title {
     margin: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    margin-top: 15px;
+    max-width: 280px; }
   .bikes__item--mountain-bicycle::before,
   .bikes__item--mountain-bicycle::after {
     display: none; }
-  .bikes__item {
-    width: 45%; }
   .bikes__item--kids-bicycle .bikes__item-title {
     margin-top: 37px; }
   .bikes__item img {
@@ -1312,4 +1315,4 @@ template {
     height: 68px;
     border: 13px solid #0ad9c6;
     top: 0;
-    left: 76%; } }
+    left: 83%; } }

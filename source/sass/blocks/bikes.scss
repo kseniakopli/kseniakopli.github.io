@@ -7,7 +7,7 @@
 }
 
 .bikes__item {
-  margin-right:50px;
+  margin-right: 50px;
 }
 
 .bikes__item:nth-child(3n) {
@@ -84,7 +84,6 @@
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;
-  text-align: center;
   letter-spacing: -0.5px;
   color: #000000;
   text-align: center;
@@ -108,11 +107,15 @@
     margin: 0;
   }
 
+  .bikes__item:nth-child(3n) {
+    margin-top: 1%;
+  }
+
   .bikes__item--city-bicycle::before {
     width: 127px;
     height: 127px;
     border: 18px solid #0ad9c6;
-    top: 53%;
+    top: 51%;
     left: -9%;
   }
 
@@ -125,7 +128,8 @@
     width: 68px;
     height: 68px;
     border: 13px solid #0ad9c6;
-    top: 0;
+    top: -5%;
+    left: 80%;
   }
 
   .bikes__item-title {
@@ -140,31 +144,39 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .bikes {
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 30px;
   }
 
   .bikes__item,
   .bikes__item:first-child,
   .bikes__item--mountain-bicycle {
-    margin: 0;
+    width: 40%;
+    margin-top: 0;
   }
 
-  .bikes__item,
-  .bikes__item-title {
-    width: 270px;
+  .bikes__item {
+    align-items: center;
+  }
+
+  .bikes__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .bikes__item:nth-child(3n) {
+    margin-top: 0;
   }
 
   .bikes__item-title {
     margin: 0;
     margin-bottom: 30px;
+    margin-top: 15px;
+    max-width: 280px;
   }
 
   .bikes__item--mountain-bicycle::before,
   .bikes__item--mountain-bicycle::after {
     display: none;
-  }
-  .bikes__item {
-    width: 45%;
   }
 
   .bikes__item--kids-bicycle .bikes__item-title {
@@ -184,12 +196,12 @@
     top: 52%;
     left: -12%;
   }
-  
+
   .bikes__item--kids-bicycle::before {
     width: 68px;
     height: 68px;
     border: 13px solid #0ad9c6;
     top: 0;
-    left: 76%;
+    left: 83%;
   }
 }

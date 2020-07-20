@@ -1,29 +1,29 @@
+'use strict';
 // Получение данных
-const menu = document.querySelector(".menu");
-const menuButton = menu.querySelector(".menu__btn");
-const menuLink = menu.querySelectorAll(".menu__link");
+var menuList = document.querySelector('.menu');
+var menuButton = menuList.querySelector('.menu__btn');
+var menuLink = menuList.querySelectorAll('.menu__link');
 
-menu.classList.remove("menu--nojs");
+menuList.classList.remove('menu--nojs');
 
-//События
-menuButton.addEventListener("click", function () {
+// События
+menuButton.addEventListener('click', function () {
   applyChanges();
 });
 
-for (let i = 0; i < menuLink.length; i++) {
-  menuLink[i].addEventListener("click", function () {
+for (var i = 0; i < menuLink.length; i++) {
+  menuLink[i].addEventListener('click', function () {
     applyChanges();
   });
 }
 
-//Функции
-
+// Функции
 function applyChanges() {
-  if (menu.classList.contains("menu--opened")) {
-    menu.classList.add("menu--closed");
-    menu.classList.remove("menu--opened");
+  if (menuList.classList.contains('menu--opened')) {
+    menuList.classList.add('menu--closed');
+    menuList.classList.remove('menu--opened');
   } else {
-    menu.classList.add("menu--opened");
-    menu.classList.remove("menu--closed");
+    menuList.classList.add('menu--opened');
+    menuList.classList.remove('menu--closed');
   }
 }
