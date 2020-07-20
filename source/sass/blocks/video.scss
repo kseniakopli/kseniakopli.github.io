@@ -4,17 +4,24 @@
   height: 706px;
   position: relative;
   z-index: 1;
+  margin-bottom: 250px;
 }
+
 .video__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left:30px;
+  max-width: 1200px;;
+  margin:0 auto;
+  padding:0 25px;
 }
+
 .video__title {
   color: #ffffff;
   padding-top: 120px;
+  word-wrap: break-word;
 }
+
 .video__description {
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-style: normal;
@@ -37,28 +44,42 @@
 .video__clip img {
   max-width: 100%;
 }
-
-.video__clip::before {
-  content: "";
+.video__clip-btn {
+  position: absolute;
   width: 65px;
   height: 65px;
-  position: absolute;
-  background: #0ad9c6;
-  border-radius: 50%;
   top: 43.5%;
   left: 46.7%;
   z-index: 2;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #0ad9c6;
   cursor: pointer;
 }
-.video__clip-icon {
+
+.video__clip-btn:hover,
+.video__clip-btn:focus,
+.video__clip-btn:active
+ {
+  background: #E0FFFF;
+  border: none;
+  outline: none;
+}
+
+.video__clip-btn::before {
   position: absolute;
-  top: 48%;
-  left: 49.5%;
-  color: #070707;
-  font-size: 20px;
-  z-index: 3;
-  cursor: pointer;
+  content: "";
+  top: 35%;
+  left: 43%;
+  width: 0;
+  height: 0;
+  border-width: 10px 0 10px 13px;
+  border-style: solid;
+  border-right: 0;
+  border-color:transparent transparent transparent black;
 }
+
 
 @media (min-width: 320px) and (max-width: 767px) {
   .video {
@@ -69,11 +90,13 @@
     width: 288px;
     height: 161.66px;
   }
+
   .video__title {
     padding-top: 84px;
     font-size: 24px;
     margin: 0;
   }
+
   .video__description {
     margin-bottom: 50px;
     padding-left: 10px;
@@ -83,10 +106,12 @@
     top: 30%;
     left: 40%;
   }
+
   .video__clip-icon {
     top: 43%;
     left: 48%;
   }
+
   .video__container {
     padding-left:0;
   }
@@ -96,24 +121,29 @@
   .video {
     height: 413px;
   }
+
   .video__container {
     padding-left:0;
   }
+
   .video__clip img {
     width: 503px;
     height: 282px;
   }
+
   .video__clip::before {
     width: 90.36px;
     height: 90.36px;
     top: 34%;
     left: 41%;
   }
+
   .video__clip-icon {
     font-size: 30px;
     top: 44%;
     left: 48%;
   }
+
   .video__title {
     padding-top: 70px;
     margin: 0;

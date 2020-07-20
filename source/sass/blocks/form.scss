@@ -13,7 +13,8 @@
   color: #ffffff;
   mix-blend-mode: normal;
   margin: 0;
-  margin-top: 4px;
+  margin-bottom: 19px;
+  padding-top: 4px;
 }
 
 .form input {
@@ -57,6 +58,9 @@
   min-height: 51px;
   border: none;
   cursor: pointer;
+  min-height: 50px;
+  width: 100%;
+  letter-spacing: 0.025em;
 }
 
 .form button:hover {
@@ -69,7 +73,7 @@
   .form__description {
     color: #000000;
     font-size: 18px;
-    padding-top: 65px;
+    margin-top:65px;
     margin-bottom: 22px;
   }
   .form input {
@@ -77,7 +81,7 @@
   }
 
   .form {
-    padding-left: 15px;
+    padding: 0 15px;
   }
 }
 

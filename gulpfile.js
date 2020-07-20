@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var lec = require("gulp-line-ending-corrector");
 
 gulp.task("css", function () {
   return gulp
@@ -28,7 +29,8 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    .pipe(server.stream());
+    .pipe(server.stream())
+    .pipe(lec({ verbose: true, eolc: "LF", encoding: "utf8" }));
 });
 
 gulp.task("server", function () {

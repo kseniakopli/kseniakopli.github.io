@@ -1,26 +1,35 @@
 .about {
   height: auto;
-  margin-bottom: 150px;
+  margin-bottom: 130px;
 }
 
 .about__title {
   padding-top: 150px;
+  padding-left: 15px;
   text-align: center;
+  color: #1f1f1f;
+  margin: 0;
   color: #1f1f1f;
 }
 
 .about__container {
-  max-width: 1320px;
+  max-width: 1150px;
+  margin: 0 auto;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .about {
-    margin-bottom: 0;
+    margin-bottom: 35px;
   }
+
   .about__title {
     padding-top: 70px;
+    padding-left: 0;
     margin-left: 0;
     font-size: 24px;
     line-height: 41px;
+  }
+  .about__container{
+    padding:0 15px;
   }
 }
 
