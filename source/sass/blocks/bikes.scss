@@ -1,5 +1,6 @@
 .bikes {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 60px;
   position: relative;
@@ -7,12 +8,12 @@
 }
 
 .bikes__item {
-  margin-right: 50px;
+  max-width: 31%;
+  margin-right: 5px;
 }
 
 .bikes__item:nth-child(3n) {
   margin-top: -1%;
-  margin-right: 0;
 }
 
 .bikes__item img {
@@ -105,6 +106,7 @@
   .bikes__item,
   .bikes__item:first-child {
     margin: 0;
+    max-width: 100%;
   }
 
   .bikes__item:nth-child(3n) {
@@ -148,23 +150,19 @@
     margin-top: 30px;
   }
 
-  .bikes__item,
-  .bikes__item:first-child,
-  .bikes__item--mountain-bicycle {
-    width: 40%;
-    margin-top: 0;
-  }
-
   .bikes__item {
-    align-items: center;
-  }
-
-  .bikes__item:nth-child(2n) {
-    margin-right: 0;
+    margin-top: 0;
+    max-width: 50%;
+    margin-right: 50px;
   }
 
   .bikes__item:nth-child(3n) {
     margin-top: 0;
+    margin-right: 0;
+  }
+
+  .bikes__item:nth-child(2n) {
+    margin-right: 0;
   }
 
   .bikes__item-title {

@@ -350,7 +350,8 @@ template {
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  margin: -1px; }
+  margin: 0;
+  overflow: hidden; }
 
 .about {
   height: auto;
@@ -364,7 +365,7 @@ template {
   margin: 0; }
 
 .about__container {
-  max-width: 1150px;
+  max-width: 1170px;
   margin: 0 auto; }
 
 @media (min-width: 320px) and (max-width: 1023px) {
@@ -433,14 +434,14 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 50%;
   margin: 0 auto;
-  margin-top: 29px; }
+  margin-top: 29px;
+  width: 57%; }
 
 .footer__map img {
   max-width: 100%; }
@@ -466,7 +467,10 @@ template {
   margin-right: 0; }
 
 .footer__contacts-item--email {
-  padding-left: 60px; }
+  padding-left: 45px; }
+
+.footer__contacts-item--phone {
+  padding-left: 45px; }
 
 .footer__contacts-item--email::before {
   position: absolute;
@@ -474,7 +478,7 @@ template {
   width: 26px;
   height: 20px;
   top: 15%;
-  left: 17px;
+  left: 4px;
   background: url("../img/email.svg") no-repeat; }
 
 .footer__contacts-item--phone::before {
@@ -483,7 +487,7 @@ template {
   width: 21px;
   height: 23px;
   top: -6%;
-  left: -36px;
+  left: 20px;
   background: url("../img/phone.svg") no-repeat; }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -759,7 +763,8 @@ template {
     margin-bottom: 17px;
     font-size: 30px;
     line-height: 42px;
-    margin-top: 4px; }
+    margin-top: 4px;
+    padding: 0 15px; }
   .header__content-dscr {
     text-align: center;
     margin-bottom: 70px;
@@ -795,9 +800,9 @@ template {
   color: #1f1f1f; }
 
 .types-of-bicycles__container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
-  padding-left: 3.5%; }
+  padding: 0 22px; }
 
 @media (min-width: 320px) and (max-width: 1023px) {
   .types-of-bicycles__title {
@@ -810,14 +815,12 @@ template {
     height: auto;
     padding-bottom: 15px; }
   .types-of-bicycles__container {
-    padding-left: 2px;
-    width: 90%; } }
+    padding: 0;
+    width: 80%; } }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .types-of-bicycles {
-    padding-bottom: 40px; }
-  .types-of-bicycles__container {
-    margin: 0 auto; } }
+    padding-bottom: 40px; } }
 
 .video {
   background-color: #131314;
@@ -965,13 +968,9 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 20px;
-  margin-right: 46px;
+  margin-right: 4%;
   position: relative;
   letter-spacing: -0.5px; }
-
-.facts__item:first-child {
-  margin-left: -4px;
-  margin-right: 50px; }
 
 .facts__item:nth-child(4n) {
   margin-right: 0; }
@@ -1092,7 +1091,8 @@ template {
     right: 0;
     background: url("../img/menu_icon.svg") #0ad9c6 no-repeat center;
     border: none;
-    z-index: 2; }
+    z-index: 2;
+    padding: 0; }
   .menu__list {
     display: none;
     margin: 0; }
@@ -1114,7 +1114,8 @@ template {
   .menu--nojs .menu__list-item {
     margin-right: 0; }
   .menu--nojs .menu__list {
-    display: block; }
+    display: block;
+    padding: 100px 0 140px; }
   .menu--nojs .menu__btn {
     background-color: #ffffff;
     background-image: url("../img/menu_closed_icon.svg"); }
@@ -1148,6 +1149,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 60px;
@@ -1155,11 +1159,11 @@ template {
   z-index: 1; }
 
 .bikes__item {
-  margin-right: 50px; }
+  max-width: 31%;
+  margin-right: 5px; }
 
 .bikes__item:nth-child(3n) {
-  margin-top: -1%;
-  margin-right: 0; }
+  margin-top: -1%; }
 
 .bikes__item img {
   -o-object-fit: cover;
@@ -1245,7 +1249,8 @@ template {
     height: 300px; }
   .bikes__item,
   .bikes__item:first-child {
-    margin: 0; }
+    margin: 0;
+    max-width: 100%; }
   .bikes__item:nth-child(3n) {
     margin-top: 1%; }
   .bikes__item--city-bicycle::before {
@@ -1276,19 +1281,15 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 30px; }
-  .bikes__item,
-  .bikes__item:first-child,
-  .bikes__item--mountain-bicycle {
-    width: 40%;
-    margin-top: 0; }
   .bikes__item {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    margin-top: 0;
+    max-width: 50%;
+    margin-right: 50px; }
+  .bikes__item:nth-child(3n) {
+    margin-top: 0;
+    margin-right: 0; }
   .bikes__item:nth-child(2n) {
     margin-right: 0; }
-  .bikes__item:nth-child(3n) {
-    margin-top: 0; }
   .bikes__item-title {
     margin: 0;
     margin-bottom: 30px;

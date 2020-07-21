@@ -39,11 +39,11 @@
 
 .footer__contacts {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 50%;
   margin: 0 auto;
   margin-top: 29px;
+  width: 57%;
 }
 
 .footer__map img {
@@ -75,7 +75,11 @@
 }
 
 .footer__contacts-item--email {
-  padding-left: 60px;
+  padding-left: 45px;
+}
+
+.footer__contacts-item--phone {
+  padding-left: 45px;
 }
 
 .footer__contacts-item--email::before {
@@ -84,7 +88,7 @@
   width: 26px;
   height: 20px;
   top: 15%;
-  left: 17px;
+  left: 4px;
   background: url("../img/email.svg") no-repeat;
 }
 
@@ -94,7 +98,7 @@
   width: 21px;
   height: 23px;
   top: -6%;
-  left: -36px;
+  left: 20px;
   background: url("../img/phone.svg") no-repeat;
 }
 

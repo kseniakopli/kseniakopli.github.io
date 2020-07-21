@@ -3,6 +3,7 @@
 var menuList = document.querySelector('.menu');
 var menuButton = menuList.querySelector('.menu__btn');
 var menuLink = menuList.querySelectorAll('.menu__link');
+var input = document.getElementById('phone');
 
 menuList.classList.remove('menu--nojs');
 
@@ -16,6 +17,10 @@ for (var i = 0; i < menuLink.length; i++) {
     applyChanges();
   });
 }
+
+input.oninvalid = function (event) {
+  event.target.setCustomValidity('Ошибка: в номере телефона нельзя указывать буквы');
+};
 
 // Функции
 function applyChanges() {
