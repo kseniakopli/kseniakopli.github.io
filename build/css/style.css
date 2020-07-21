@@ -366,7 +366,8 @@ template {
 
 .about__container {
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 15px; }
 
 @media (min-width: 320px) and (max-width: 1023px) {
   .about {
@@ -800,9 +801,10 @@ template {
   color: #1f1f1f; }
 
 .types-of-bicycles__container {
-  max-width: 1150px;
+  max-width: 1186px;
   margin: 0 auto;
-  padding: 0 22px; }
+  padding: 0 30px;
+  text-align: center; }
 
 @media (min-width: 320px) and (max-width: 1023px) {
   .types-of-bicycles__title {
@@ -1159,11 +1161,12 @@ template {
   z-index: 1; }
 
 .bikes__item {
-  max-width: 31%;
+  max-width: 30%;
   margin-right: 5px; }
 
 .bikes__item:nth-child(3n) {
-  margin-top: -1%; }
+  margin-top: -1%;
+  margin-right: 0; }
 
 .bikes__item img {
   -o-object-fit: cover;

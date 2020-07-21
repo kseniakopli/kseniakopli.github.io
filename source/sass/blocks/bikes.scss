@@ -8,12 +8,13 @@
 }
 
 .bikes__item {
-  max-width: 31%;
+  max-width: 30%;
   margin-right: 5px;
 }
 
 .bikes__item:nth-child(3n) {
   margin-top: -1%;
+  margin-right: 0;
 }
 
 .bikes__item img {
