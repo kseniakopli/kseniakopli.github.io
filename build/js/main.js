@@ -1,9 +1,11 @@
 "use strict";
+
 // Получение данных
 var menuList = document.querySelector(".menu");
 var menuButton = menuList.querySelector(".menu__btn");
 var menuLink = menuList.querySelectorAll(".menu__link");
 var input = document.getElementById("phone");
+var submit = document.getElementById("submit");
 
 menuList.classList.remove("menu--nojs");
 
@@ -18,11 +20,16 @@ for (var i = 0; i < menuLink.length; i++) {
   });
 }
 
-input.oninvalid = function (event) {
-  event.target.setCustomValidity(
-    "Введите телефон в формате (XXX) XXX-XX-XX без использования букв"
-  );
-};
+submit.addEventListener("click", function () {
+  input.oninvalid = function (event) {
+    event.target.setCustomValidity(
+      "Введите телефон без использования букв и символов"
+    );
+    input.oninput = function (event) {
+      event.target.setCustomValidity("");
+    };
+  };
+});
 
 // Функции
 function applyChanges() {

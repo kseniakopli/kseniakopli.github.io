@@ -64,7 +64,7 @@
 }
 
 .form button:hover {
-  background: transparent;
+  background: darken($color: #0ad9c6, $amount: 20%);
   border: 1px solid #ffffff;
   color: #ffffff;
 }

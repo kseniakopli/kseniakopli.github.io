@@ -8,12 +8,14 @@
 .types-of-bicycles__title {
   padding-top: 153px;
   color: #1f1f1f;
+  padding-right: 36px;
 }
 
 .types-of-bicycles__container {
-  max-width: 1186px;
+  max-width: 1230px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding-left: 63px;
+  padding-right: 36px;
   text-align: center;
 }
 
@@ -24,6 +26,7 @@
     line-height: 41px;
     margin-left: 0;
     letter-spacing: -0.005em;
+    padding-right: 0;
   }
 
   .types-of-bicycles {
